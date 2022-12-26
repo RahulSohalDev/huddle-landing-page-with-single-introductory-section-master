@@ -153,13 +153,18 @@ footer p a {
 }
 @media screen and (max-width: 760px) {
   #wrapper {
-    padding: 11px 35px;
+    padding: 25px 22px;
   }
   nav {
     margin-bottom: 22px;
   }
   main {
     display: block;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
   }
   body {
     background-image: url("./images/bg-mobile.svg");
@@ -167,7 +172,7 @@ footer p a {
     background-size: contain;
   }
   .logo img {
-    width: 114px;
+    width: 200px;
   }
   .content {
     text-align: center;
@@ -207,24 +212,39 @@ footer p a {
     font-size: 19px;
     cursor: pointer;
   }
+  .social {
+    float: right;
+    margin-right: 44px;
+    color: white;
+    position: absolute;
+    top: 90%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
 }
 @media screen and (max-width: 460px) {
   #wrapper {
-    padding: 8px 6px;
+    padding: 25px 22px;
   }
   nav {
     margin-bottom: 22px;
   }
   main {
     display: block;
+    position: absolute;
+    top: 45%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
   }
   body {
-    background-image: url("./images/bg-mobile.svg");
+    background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   .logo img {
-    width: 87px;
+    width: 109px;
   }
   .content {
     text-align: center;
@@ -235,12 +255,12 @@ footer p a {
   .content p {
     margin: 12px 0px;
     font-family: "Balsamiq Sans", cursive;
-    font-size: 7px;
+    font-size: 8px;
     color: rgb(246, 246, 246);
   }
   .content h1 {
     color: white;
-    font-size: 16px;
+    font-size: 23px;
     font-family: "Balsamiq Sans", cursive;
     margin-bottom: 14px;
   }
@@ -263,5 +283,15 @@ footer p a {
     margin: 0px 4px;
     font-size: 13px;
     cursor: pointer;
+  }
+  .social {
+    float: right;
+    margin-right: 44px;
+    color: white;
+    position: absolute;
+    top: 90%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
   }
 }
